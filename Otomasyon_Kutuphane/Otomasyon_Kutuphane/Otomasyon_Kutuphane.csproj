@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABBFE6AC-A3F7-46CB-894C-75EA7E7F69CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otomasyon_Kutuphane</RootNamespace>
+    <AssemblyName>Otomasyon_Kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmGirisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisler.Designer.cs">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKayitOl.Designer.cs">
+      <DependentUpon>FrmKayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciGiris.Designer.cs">
+      <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYoneticiGiris.Designer.cs">
+      <DependentUpon>FrmYoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IadeEtme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IadeEtme.Designer.cs">
+      <DependentUpon>IadeEtme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapEkleme.Designer.cs">
+      <DependentUpon>KitapEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapGuncelleme.Designer.cs">
+      <DependentUpon>KitapGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitaplar.Designer.cs">
+      <DependentUpon>Kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapOnerme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapOnerme.Designer.cs">
+      <DependentUpon>KitapOnerme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapSilme.Designer.cs">
+      <DependentUpon>KitapSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciAnaSayfa.Designer.cs">
+      <DependentUpon>KullaniciAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleme.Designer.cs">
+      <DependentUpon>KullaniciEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.Designer.cs">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSilmecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSilmecs.Designer.cs">
+      <DependentUpon>KullaniciSilmecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıIade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıIade.Designer.cs">
+      <DependentUpon>KullanıcıIade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OducVerme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OducVerme.Designer.cs">
+      <DependentUpon>OducVerme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OduncAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncAlma.Designer.cs">
+      <DependentUpon>OduncAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OduncGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncGecmisi.Designer.cs">
+      <DependentUpon>OduncGecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnerilenKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnerilenKitap.Designer.cs">
+      <DependentUpon>OnerilenKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopulerKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopulerKitaplar.Designer.cs">
+      <DependentUpon>PopulerKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RastgeleKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RastgeleKitap.Designer.cs">
+      <DependentUpon>RastgeleKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="sqlbaglantısı.cs" />
+    <Compile Include="YöneticiAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiAnasayfa.Designer.cs">
+      <DependentUpon>YöneticiAnasayfa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmGirisler.resx">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKayitOl.resx">
+      <DependentUpon>FrmKayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciGiris.resx">
+      <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYoneticiGiris.resx">
+      <DependentUpon>FrmYoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IadeEtme.resx">
+      <DependentUpon>IadeEtme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapEkleme.resx">
+      <DependentUpon>KitapEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapGuncelleme.resx">
+      <DependentUpon>KitapGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitaplar.resx">
+      <DependentUpon>Kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapOnerme.resx">
+      <DependentUpon>KitapOnerme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapSilme.resx">
+      <DependentUpon>KitapSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciAnaSayfa.resx">
+      <DependentUpon>KullaniciAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleme.resx">
+      <DependentUpon>KullaniciEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGuncelle.resx">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSilmecs.resx">
+      <DependentUpon>KullaniciSilmecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıIade.resx">
+      <DependentUpon>KullanıcıIade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OducVerme.resx">
+      <DependentUpon>OducVerme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncAlma.resx">
+      <DependentUpon>OduncAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncGecmisi.resx">
+      <DependentUpon>OduncGecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnerilenKitap.resx">
+      <DependentUpon>OnerilenKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopulerKitaplar.resx">
+      <DependentUpon>PopulerKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RastgeleKitap.resx">
+      <DependentUpon>RastgeleKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiAnasayfa.resx">
+      <DependentUpon>YöneticiAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

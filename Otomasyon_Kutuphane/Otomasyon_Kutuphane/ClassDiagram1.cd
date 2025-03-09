@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Otomasyon_Kutuphane.OnerilenKitap">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAgAIAACAAAACAAAAAAAAKAAAAAAAAAA=</HashCode>
+      <FileName>OnerilenKitap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otomasyon_Kutuphane.PopulerKitaplar">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAAIAACAAAACAAAAAAAAKAAIAAAAAAA=</HashCode>
+      <FileName>PopulerKitaplar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otomasyon_Kutuphane.RastgeleKitap">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIhAAACAAAQAgAACBQAACAAAIAAAAQEAwAABAAAA=</HashCode>
+      <FileName>RastgeleKitap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otomasyon_Kutuphane.YöneticiAnasayfa">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iBACACAAPCAAAAIQAACEEAACIAACAEAAEgBBACMUCCQ=</HashCode>
+      <FileName>YöneticiAnasayfa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otomasyon_Kutuphane.SqlBaglanti">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SqlBaglanti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
